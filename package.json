@@ -3,12 +3,14 @@
   "version": "1.0.0",
   "author": "Amanda Persdotter",
   "license": "ISC",
-  "source" : "src/index.html",
+  "source": "src/index.html",
   "scripts": {
-    "start" : "parcel",
-    "build" : "parcel build"
+    "start": "parcel",
+    "build": "parcel build"
   },
   "devDependencies": {
-    "parcel": "^2.10.3"
+    "@parcel/transformer-image": "^2.13.3",
+    "parcel": "^2.13.3",
+    "sharp": "^0.33.5"
   }
 }
