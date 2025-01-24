@@ -68,6 +68,7 @@ nav {
   .information {
     background-color: rgb(220, 215, 211);
     border-radius: 1em;
+    padding-bottom: 3em;
   }
 
   h3 {
@@ -141,4 +142,11 @@ nav {
     height: 1px;
     background-color: white;
     opacity: 70%;
+}
+
+picture {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 3em;
 }
