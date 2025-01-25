@@ -81,6 +81,7 @@ nav {
     width: 75%;
     padding-top: 2em;
     padding-bottom: 3em;
+    line-height: 1.5em;
   }
 
   .bar-brown {
@@ -146,6 +147,10 @@ nav {
   background-color: rgb(220, 215, 211);
   border-radius: 1em;
   padding-bottom: 3em;
+  box-sizing: border-box;
+  position: relative;
+  width: 100%;
+  max-width: 100%; 
 }
 
 .slideshow-container {
@@ -172,7 +177,30 @@ border-radius: 1em;
   margin-left: 4em;
 }
 
+@media (max-width: 1160px) {
+
+  .slideshow-container {
+    display: block;
+  }
+
+  .slideshow-container p {
+    width: 55%;
+    font-size: 0.8em;
+    margin-left: 1.5em;
+  }
+}
+
 @media (max-width: 750px) {
+
+  .information .slideshow-container {
+    width: 100%;
+    max-width: 100%;
+}
+
+  .information .slideshow-container picture img {
+    width: 70%;
+    height: auto;
+  }
 
   main {
     padding: 0.5em;
@@ -206,6 +234,11 @@ h3 {
 
 .menu-nav li {
   padding-right: 1em;
+}
+
+.slideshow-container p {
+  width: 70%;
+  line-height: 1.5em;
 }
 
 @media (max-width: 520px) {
@@ -245,6 +278,12 @@ h3 {
   padding-left: 1em;
   line-height: 2em;
   width: 90%;
+}
+
+.slideshow-container p {
+  margin-right: 1em;
+  line-height: 2em;
+  width: 85%;
 }
 }
 }

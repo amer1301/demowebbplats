@@ -33,9 +33,11 @@ h2 {
 .bar {
   opacity: .7;
   background-color: #fff;
-  width: 100%;
+  align-items: center;
+  width: 70%;
   height: 1px;
-  margin: 1em 0;
+  margin: auto;
+  display: flex;
 }
 
 nav {
@@ -65,12 +67,6 @@ nav {
   display: flex;
 }
 
-.information {
-  background-color: #dcd7d3;
-  border-radius: 1em;
-  padding-bottom: 3em;
-}
-
 h3 {
   margin-left: 3em;
   padding-top: 2em;
@@ -78,11 +74,12 @@ h3 {
   font-size: 1.3em;
 }
 
-p {
+.information p {
   width: 75%;
   padding-top: 2em;
   padding-bottom: 3em;
   padding-left: 4em;
+  line-height: 1.5em;
 }
 
 .bar-brown {
@@ -144,10 +141,134 @@ p {
   margin-bottom: 2em;
 }
 
-picture {
-  justify-content: center;
+.information {
+  box-sizing: border-box;
+  background-color: #dcd7d3;
+  border-radius: 1em;
+  width: 100%;
+  max-width: 100%;
+  padding-bottom: 3em;
+  position: relative;
+}
+
+.slideshow-container {
   align-items: center;
-  margin-bottom: 3em;
   display: flex;
+}
+
+.slideshow-container p {
+  margin-right: 3em;
+}
+
+.slideshow-container img {
+  border-radius: 1em;
+}
+
+.slideshow-container picture {
+  width: 100%;
+  height: auto;
+  display: none;
+}
+
+.slideshow-container picture.active {
+  margin-left: 4em;
+  display: block;
+}
+
+@media (width <= 1160px) {
+  .slideshow-container {
+    display: block;
+  }
+
+  .slideshow-container p {
+    width: 55%;
+    margin-left: 1.5em;
+    font-size: .8em;
+  }
+}
+
+@media (width <= 750px) {
+  .information .slideshow-container {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .information .slideshow-container picture img {
+    width: 70%;
+    height: auto;
+  }
+
+  main {
+    padding: .5em;
+  }
+
+  .footer-left p, .footer-right p {
+    font-size: .8em;
+  }
+
+  p {
+    width: 80%;
+    font-size: .8em;
+    line-height: 1.5em;
+  }
+
+  h3 {
+    font-size: 1em;
+  }
+
+  .bar-brown {
+    margin-left: 3em;
+  }
+
+  .menu-nav ul {
+    gap: 2.5em;
+  }
+
+  .menu-nav li {
+    padding-right: 1em;
+  }
+
+  .slideshow-container p {
+    width: 70%;
+    line-height: 1.5em;
+  }
+
+  @media (width <= 520px) {
+    .footer-right p {
+      white-space: normal;
+    }
+
+    .footer-left p {
+      overflow-wrap: break-word;
+    }
+
+    .menu-nav li a {
+      font-size: .8em;
+    }
+
+    .menu-nav li {
+      padding-right: .5em;
+    }
+
+    .menu-nav ul {
+      gap: .5em;
+    }
+
+    h3, .bar-brown {
+      margin-left: 1em;
+    }
+
+    .information p {
+      width: 90%;
+      padding-left: 1em;
+      line-height: 2em;
+    }
+
+    .slideshow-container p {
+      width: 85%;
+      margin-right: 1em;
+      line-height: 2em;
+    }
+  }
 }
 /*# sourceMappingURL=index.4d663569.css.map */
