@@ -65,12 +65,6 @@ nav {
     gap: 5em;
   }
 
-  .information {
-    background-color: rgb(220, 215, 211);
-    border-radius: 1em;
-    padding-bottom: 3em;
-  }
-
   h3 {
     margin-left: 3em;
     font-size: 1.3em;
@@ -144,9 +138,32 @@ nav {
     opacity: 70%;
 }
 
-picture {
+.information {
+  background-color: rgb(220, 215, 211);
+  border-radius: 1em;
+  padding-bottom: 3em;
+}
+
+.slideshow-container {
   display: flex;
-  justify-content: center;
   align-items: center;
-  margin-bottom: 3em;
+}
+
+.slideshow-container p {
+  margin-right: 3em;
+}
+
+.slideshow-container img {
+border-radius: 1em;
+}
+
+.slideshow-container picture {
+  display: none;
+  width: 100%;
+  height: auto;
+}
+
+.slideshow-container picture.active {
+  display: block;
+  margin-left: 4em;
 }
