@@ -1,0 +1,296 @@
+body {
+    background-color: rgb(207, 195, 184);
+    font-family: "Karla", serif;
+}
+
+main {
+    padding: 1em;
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-family: "Karla", serif;
+    font-size: 1.2em;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5em;
+    opacity: 70%;
+    text-align: center;
+}
+
+p {
+  line-height: 1.5em;
+  font-size: 1.2em;
+}
+
+h2 {
+    font-family: "Times New Roman", sans-serif;
+    font-size: 1.5em;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5;
+    text-decoration: none;
+    text-align: center;
+}
+
+.bar {
+    width: 100%;
+    height: 1px;
+    background-color: white;
+    margin: 1em 0;
+    opacity: 70%;
+    width: 70%;
+    display: flex;
+    align-items: center;
+    margin: auto;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+.menu-nav li a:hover {
+    color: rgba(153, 134, 117, 1);
+}
+
+.menu-nav li a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.2em;
+    text-align: center;
+  }
+
+ .menu-nav li {
+    border-right: 0.5px solid black;
+    padding-right: 2.5em;
+  }
+
+  .menu-nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 5em;
+  }
+
+  h3 {
+    margin-left: 3em;
+    font-size: 1.3em;
+    font-family: "Karla", serif;
+    padding-top: 2em;
+  }
+
+  .information p {
+    padding-left: 4em;
+    width: 75%;
+    padding-top: 2em;
+    padding-bottom: 3em;
+    line-height: 1.5em;
+  }
+
+  .bar-brown {
+    width: 15%;
+    height: 2px;
+    background-color: rgba(153, 134, 117, 1);
+    margin-left: 4em;
+  }
+
+  .underline {
+    text-decoration: underline;
+}
+
+.footer {
+    display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-left {
+    align-items: flex-start;
+    display: block;
+}
+
+.footer-left p {
+    padding-top: 0;
+    margin-top: 0;
+    font-family: "Karla", serif;
+    font-size: 1em;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5em;
+    opacity: 70%;
+}
+
+.footer-right {
+    align-items: flex-end;
+    display: block;
+    white-space: nowrap;
+}
+
+.footer-right p {
+    padding-top: 0;
+    margin-top: 0;
+    font-family: "Karla", serif;
+    font-size: 1em;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5em;
+    opacity: 70%;
+}
+
+.bar-footer {
+    margin-top: 10em;
+    margin-bottom: 2em;
+    width: 100%;
+    height: 1px;
+    background-color: white;
+    opacity: 70%;
+}
+
+.information {
+  background-color: rgb(220, 215, 211);
+  border-radius: 1em;
+  padding-bottom: 3em;
+  box-sizing: border-box;
+  position: relative;
+  width: 100%;
+  max-width: 100%; 
+}
+
+.slideshow-container {
+  display: flex;
+  align-items: center;
+}
+
+.slideshow-container p {
+  margin-right: 3em;
+  line-height: 1.5em;
+}
+
+.slideshow-container img {
+border-radius: 1em;
+}
+
+.slideshow-container picture {
+  display: none;
+  width: 100%;
+  height: auto;
+}
+
+.slideshow-container picture.active {
+  display: block;
+  margin-left: 4em;
+}
+
+@media (max-width: 1160px) {
+
+  .slideshow-container {
+    display: block;
+  }
+
+  .slideshow-container p {
+    width: 55%;
+    font-size: 1.2em;
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 750px) {
+
+  .information .slideshow-container {
+    width: 100%;
+    max-width: 100%;
+}
+
+  .information .slideshow-container picture img {
+    width: 70%;
+    height: auto;
+  }
+
+  main {
+    padding: 0.5em;
+}
+
+.footer-left p {
+  font-size: 0.8em;
+}
+
+.footer-right p {
+  font-size: 0.8em;
+}
+
+p {
+  font-size: 0.8em;
+  line-height: 1.5em;
+  width: 80%;
+}
+
+h3 {
+  font-size: 1em;
+}
+
+.bar-brown {
+  margin-left: 3em;
+}
+
+.menu-nav ul {
+  gap: 2.5em;
+}
+
+.menu-nav li {
+  padding-right: 1em;
+}
+
+.slideshow-container p {
+  width: 70%;
+  line-height: 1.5em;
+  font-size: 0.8em;
+  margin-left: 1em;
+}
+
+@media (max-width: 520px) {
+  .menu-nav li a {
+    font-size: 0.8em;
+}
+
+.footer-right p {
+  white-space: normal; 
+}
+
+.footer-left p {
+  overflow-wrap: break-word;
+}
+
+.menu-nav li a {
+  font-size: 0.8em;
+}
+
+.menu-nav li {
+  padding-right: 0.5em;
+}
+
+.menu-nav ul {
+  gap: 0.5em;
+}
+
+h3 {
+  margin-left: 1em;
+}
+
+.bar-brown {
+  margin-left: 1em;
+}
+
+.information p {
+  padding-left: 1em;
+  line-height: 2em;
+  width: 90%;
+}
+
+.slideshow-container p {
+  margin-right: 1em;
+  line-height: 2em;
+  width: 85%;
+}
+}
+}
