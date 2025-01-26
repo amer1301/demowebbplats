@@ -9,6 +9,7 @@
         "build": "parcel build"
     },
     "devDependencies": {
+        "@parcel/transformer-image": "^2.13.3",
         "parcel": "^2.13.3",
         "sharp": "^0.33.5"
     }
