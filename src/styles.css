@@ -1,7 +1,6 @@
 body {
     background-color: rgb(207, 195, 184);
     font-family: "Karla", serif;
-    font-size: 1.2em;
 }
 
 main {
@@ -12,12 +11,17 @@ main {
 
 h1 {
     font-family: "Karla", serif;
-    font-size: 1em;
+    font-size: 1.2em;
     font-style: normal;
     font-weight: 400;
     line-height: 1.5em;
     opacity: 70%;
     text-align: center;
+}
+
+p {
+  line-height: 1.5em;
+  font-size: 1.2em;
 }
 
 h2 {
@@ -54,7 +58,7 @@ nav {
 .menu-nav li a {
     text-decoration: none;
     color: black;
-    font-size: 1em;
+    font-size: 1.2em;
     text-align: center;
   }
 
@@ -160,6 +164,7 @@ nav {
 
 .slideshow-container p {
   margin-right: 3em;
+  line-height: 1.5em;
 }
 
 .slideshow-container img {
@@ -185,8 +190,8 @@ border-radius: 1em;
 
   .slideshow-container p {
     width: 55%;
-    font-size: 0.8em;
-    margin-left: 1.5em;
+    font-size: 1.2em;
+    margin-left: 0;
   }
 }
 
@@ -239,6 +244,8 @@ h3 {
 .slideshow-container p {
   width: 70%;
   line-height: 1.5em;
+  font-size: 0.8em;
+  margin-left: 1em;
 }
 
 @media (max-width: 520px) {

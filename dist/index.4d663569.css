@@ -1,7 +1,6 @@
 body {
   background-color: #cfc3b8;
   font-family: Karla, serif;
-  font-size: 1.2em;
 }
 
 main {
@@ -14,9 +13,14 @@ h1 {
   opacity: .7;
   text-align: center;
   font-family: Karla, serif;
-  font-size: 1em;
+  font-size: 1.2em;
   font-style: normal;
   font-weight: 400;
+  line-height: 1.5em;
+}
+
+p {
+  font-size: 1.2em;
   line-height: 1.5em;
 }
 
@@ -52,7 +56,7 @@ nav {
 .menu-nav li a {
   color: #000;
   text-align: center;
-  font-size: 1em;
+  font-size: 1.2em;
   text-decoration: none;
 }
 
@@ -158,6 +162,7 @@ h3 {
 
 .slideshow-container p {
   margin-right: 3em;
+  line-height: 1.5em;
 }
 
 .slideshow-container img {
@@ -182,8 +187,8 @@ h3 {
 
   .slideshow-container p {
     width: 55%;
-    margin-left: 1.5em;
-    font-size: .8em;
+    margin-left: 0;
+    font-size: 1.2em;
   }
 }
 
@@ -230,6 +235,8 @@ h3 {
 
   .slideshow-container p {
     width: 70%;
+    margin-left: 1em;
+    font-size: .8em;
     line-height: 1.5em;
   }
 
