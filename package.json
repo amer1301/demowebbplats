@@ -9,8 +9,24 @@
         "build": "parcel build"
     },
     "devDependencies": {
-        "@parcel/transformer-image": "^2.13.3",
+        "@babel/core": "^7.26.7",
+        "@babel/preset-env": "^7.26.7",
         "parcel": "^2.13.3",
         "sharp": "^0.33.5"
+    },
+    "browserslist": [
+        ">0.5%",
+        "last 2 versions",
+        "not dead"
+    ],
+    "babel": {
+        "presets": [
+            [
+                "@babel/preset-env",
+                {
+                    "targets": ">0.5%, last 2 versions, not dead"
+                }
+            ]
+        ]
     }
 }
