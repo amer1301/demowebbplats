@@ -19,12 +19,12 @@
 105C:\Users\Amanda\OneDrive\Skrivbord\demowebbplats\node_modules\.babel-plugin-polyfill-regenerator-lB5Gsjyl133827082684474898 1
 105C:\Users\Amanda\OneDrive\Skrivbord\demowebbplats\node_modules\@babel\plugin-transform-for-of\package.json133828975957298448 0
 110C:\Users\Amanda\OneDrive\Skrivbord\demowebbplats\node_modules\unicode-property-aliases-ecmascript\package.json133828975954998990 0
-52C:\Users\Amanda\OneDrive\Skrivbord\demowebbplats\src133830638613149722 1
+52C:\Users\Amanda\OneDrive\Skrivbord\demowebbplats\src133830685160903449 1
 70C:\Users\Amanda\OneDrive\Skrivbord\demowebbplats\node_modules\escalade133822097953138766 1
 113C:\Users\Amanda\OneDrive\Skrivbord\demowebbplats\node_modules\@jridgewell\gen-mapping\dist\gen-mapping.umd.js.map133828975956952814 0
 100C:\Users\Amanda\OneDrive\Skrivbord\demowebbplats\node_modules\@parcel\transformer-html\src\inline.js133822096820840206 0
 121C:\Users\Amanda\OneDrive\Skrivbord\demowebbplats\node_modules\regenerate-unicode-properties\Script_Extensions\Phags_Pa.js133828975964468642 0
-53C:\Users\Amanda\OneDrive\Skrivbord\demowebbplats\dist133830679798268485 1
+53C:\Users\Amanda\OneDrive\Skrivbord\demowebbplats\dist133830685987586031 1
 108C:\Users\Amanda\OneDrive\Skrivbord\demowebbplats\node_modules\caniuse-lite\data\features\css-first-letter.js133822096841192324 0
 102C:\Users\Amanda\OneDrive\Skrivbord\demowebbplats\node_modules\lightningcss-win32-x64-msvc\package.json133822096806795721 0
 109C:\Users\Amanda\OneDrive\Skrivbord\demowebbplats\node_modules\@jridgewell\set-array\dist\set-array.umd.js.map133828975956769972 0
@@ -86,7 +86,7 @@
 108C:\Users\Amanda\OneDrive\Skrivbord\demowebbplats\node_modules\resolve\test\resolver\symlinked\_\node_modules133828976852270798 1
 100C:\Users\Amanda\OneDrive\Skrivbord\demowebbplats\node_modules\caniuse-lite\data\features\css-sel2.js133822096842465219 0
 82C:\Users\Amanda\OneDrive\Skrivbord\demowebbplats\node_modules\sharp\lib\channel.js133823761361484119 0
-71C:\Users\Amanda\OneDrive\Skrivbord\demowebbplats\src\arbetsprocess.html133830635263570799 0
+71C:\Users\Amanda\OneDrive\Skrivbord\demowebbplats\src\arbetsprocess.html133830685914966884 0
 90C:\Users\Amanda\OneDrive\Skrivbord\demowebbplats\node_modules\cosmiconfig\dist\Explorer.js133822096813433360 0
 123C:\Users\Amanda\OneDrive\Skrivbord\demowebbplats\node_modules\regenerate-unicode-properties\Script\Inscriptional_Pahlavi.js133828975962151087 0
 86C:\Users\Amanda\OneDrive\Skrivbord\demowebbplats\node_modules\.normalize-path-y5d4OG38133827082684761232 1
@@ -94,7 +94,7 @@
 121C:\Users\Amanda\OneDrive\Skrivbord\demowebbplats\node_modules\@babel\plugin-transform-block-scoped-functions\package.json133828975956706395 0
 89C:\Users\Amanda\OneDrive\Skrivbord\demowebbplats\node_modules\regenerator-runtime\path.js133822096804262644 0
 68C:\Users\Amanda\OneDrive\Skrivbord\demowebbplats\node_modules\parcel133822097832824758 1
-69C:\Users\Amanda\OneDrive\Skrivbord\demowebbplats\src\fotografier.html133830635263590595 0
+69C:\Users\Amanda\OneDrive\Skrivbord\demowebbplats\src\fotografier.html133830685828823356 0
 98C:\Users\Amanda\OneDrive\Skrivbord\demowebbplats\node_modules\resolve\test\resolver\other_path\lib133828976850499581 1
 115C:\Users\Amanda\OneDrive\Skrivbord\demowebbplats\node_modules\@babel\runtime\helpers\esm\objectWithoutProperties.js133828975961766924 0
 88C:\Users\Amanda\OneDrive\Skrivbord\demowebbplats\node_modules\@parcel\cache\lib\index.js133822096832174495 0
@@ -118,7 +118,7 @@
 60C:\Users\Amanda\OneDrive\Skrivbord\demowebbplats\src\main.js133823630301736349 0
 78C:\Users\Amanda\OneDrive\Skrivbord\demowebbplats\node_modules\@parcel\profiler133822097847709364 1
 99C:\Users\Amanda\OneDrive\Skrivbord\demowebbplats\node_modules\lightningcss-win32-x64-msvc\README.md133822096807410416 0
-65C:\Users\Amanda\OneDrive\Skrivbord\demowebbplats\src\moment2.html133830635756580176 0
+65C:\Users\Amanda\OneDrive\Skrivbord\demowebbplats\src\moment2.html133830685654622553 0
 63C:\Users\Amanda\OneDrive\Skrivbord\demowebbplats\src\moment2.js133830635756580176 0
 93C:\Users\Amanda\OneDrive\Skrivbord\demowebbplats\node_modules\caniuse-lite\data\regions\LB.js133822096846559353 0
 80C:\Users\Amanda\OneDrive\Skrivbord\demowebbplats\node_modules\sharp\lib\sharp.js133823761361718694 0
@@ -5052,7 +5052,7 @@
 101C:\Users\Amanda\OneDrive\Skrivbord\demowebbplats\node_modules\@swc\helpers\_\_class_private_field_get133822097912280091 1
 102C:\Users\Amanda\OneDrive\Skrivbord\demowebbplats\node_modules\@swc\helpers\_\_class_private_field_init133822097912403126 1
 107C:\Users\Amanda\OneDrive\Skrivbord\demowebbplats\node_modules\@swc\helpers\_\_class_private_field_loose_key133822097912714516 1
-70C:\Users\Amanda\OneDrive\Skrivbord\demowebbplats\dist\fotografier.html133830679797668827 0
+70C:\Users\Amanda\OneDrive\Skrivbord\demowebbplats\dist\fotografier.html133830685987241851 0
 102C:\Users\Amanda\OneDrive\Skrivbord\demowebbplats\node_modules\@swc\helpers\_\_class_private_method_get133822097913300980 1
 72C:\Users\Amanda\OneDrive\Skrivbord\demowebbplats\dist\index.d170d0e3.css133830633903520183 0
 102C:\Users\Amanda\OneDrive\Skrivbord\demowebbplats\node_modules\@swc\helpers\_\_class_private_method_set133822097913953906 1
@@ -6269,7 +6269,7 @@
 99C:\Users\Amanda\OneDrive\Skrivbord\demowebbplats\node_modules\@mischnic\json-sourcemap\package.json133822096827240372 0
 78C:\Users\Amanda\OneDrive\Skrivbord\demowebbplats\node_modules\@babel\generator133828976792293528 1
 96C:\Users\Amanda\OneDrive\Skrivbord\demowebbplats\node_modules\@mischnic\json-sourcemap\README.md133822096827020899 0
-72C:\Users\Amanda\OneDrive\Skrivbord\demowebbplats\dist\arbetsprocess.html133830679797668827 0
+72C:\Users\Amanda\OneDrive\Skrivbord\demowebbplats\dist\arbetsprocess.html133830685987241851 0
 102C:\Users\Amanda\OneDrive\Skrivbord\demowebbplats\node_modules\@mischnic\json-sourcemap\dist\index.d.ts133822096827538193 0
 100C:\Users\Amanda\OneDrive\Skrivbord\demowebbplats\node_modules\@mischnic\json-sourcemap\dist\index.js133822096828047319 0
 105C:\Users\Amanda\OneDrive\Skrivbord\demowebbplats\node_modules\@mischnic\json-sourcemap\dist\index.js.flow133822096828609981 0
@@ -7582,7 +7582,7 @@
 71C:\Users\Amanda\OneDrive\Skrivbord\demowebbplats\dist\index.cde3bbbf.js133830633903510242 0
 76C:\Users\Amanda\OneDrive\Skrivbord\demowebbplats\dist\index.d170d0e3.css.map133830633903533683 0
 64C:\Users\Amanda\OneDrive\Skrivbord\demowebbplats\dist\index.html133830679797668827 0
-66C:\Users\Amanda\OneDrive\Skrivbord\demowebbplats\dist\moment2.html133830679797674011 0
+66C:\Users\Amanda\OneDrive\Skrivbord\demowebbplats\dist\moment2.html133830685987241851 0
 75C:\Users\Amanda\OneDrive\Skrivbord\demowebbplats\dist\skogen1.4385569a.avif133830633903592371 0
 75C:\Users\Amanda\OneDrive\Skrivbord\demowebbplats\dist\skogen1.ddf2f23e.webp133830633903652330 0
 75C:\Users\Amanda\OneDrive\Skrivbord\demowebbplats\dist\skogen2.02c77e40.webp133830633903662339 0
