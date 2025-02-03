@@ -10,12 +10,13 @@ async function displayData() {
     let data = await fetchData(); 
 
 const tableBody = document.querySelector("#courseTable tbody");
+const searchInput = document.getElementById('searchInput');
+let currentData = [...data];
 
-//Rensa tabellen om det redan finns data
-tableBody.innerHTML = "";
-
-data.forEach(course => {
-    const row = document.createElement('tr'); //skapar ny rad
+function renderTable(data) {
+    tableBody.innerHTML = "";
+    data.forEach(course => {
+        const row = document.createElement('tr');
 
     //skapar celler och lägger till dem
     const codeCell = document.createElement('td');
@@ -44,4 +45,26 @@ data.forEach(course => {
 });
 } 
  
-displayData(); 
+function sortTable(key) {
+    currentData.sort((a, b) => a[key].localCompare(b[key]));
+    renderTable(currentData);
+}
+
+function filterData(query) {
+    currentData = data.filter(course =>
+        course.code.toLowerCase().includes(query.toLowerCase()) ||
+        course.coursename.toLowerCase().includes(query.toLowerCase())
+    );
+    renderTable(currentData);
+}
+
+document.querySelectorAll('th[data-key]').forEach(header => {
+    header.addEventListener('click', () => sortTable(header.CDATA_SECTION_NODE.key));
+});
+
+searchInput.addEventListener('input', (e) => filterData(e.target.value));
+
+renderTable(data);
+}
+
+displayData();
