@@ -220,6 +220,16 @@ a {
   width: 90%;
 }
 
+th {
+  text-decoration: underline;
+  cursor: pointer; 
+}
+
+
+th:last-child {
+  text-decoration: none;
+}
+
 @media (max-width: 1160px) {
 
   .slideshow-container {

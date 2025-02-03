@@ -7,11 +7,18 @@ async function fetchData() {
  
 // Asynkron Funktion som inväntar och visar data 
 async function displayData() { 
+    try {
     let data = await fetchData(); 
 
 const tableBody = document.querySelector("#courseTable tbody");
 const searchInput = document.getElementById('searchInput');
 let currentData = [...data];
+
+const sortDirections = {
+    code: true, //true är stigande och false är fallande
+    coursename: true,
+    progression: true
+};
 
 function renderTable(data) {
     tableBody.innerHTML = "";
@@ -46,7 +53,12 @@ function renderTable(data) {
 } 
  
 function sortTable(key) {
-    currentData.sort((a, b) => a[key].localCompare(b[key]));
+    sortDirections[key] = !sortDirections[key];
+    
+    currentData.sort((a, b) => {
+        const comparison = a[key].localeCompare(b[key], 'sv', { sensitivity: 'base' });
+        return sortDirections[key] ? comparison : -comparison;
+    });
     renderTable(currentData);
 }
 
@@ -59,12 +71,16 @@ function filterData(query) {
 }
 
 document.querySelectorAll('th[data-key]').forEach(header => {
-    header.addEventListener('click', () => sortTable(header.CDATA_SECTION_NODE.key));
+    header.addEventListener('click', () => sortTable(header.dataset.key));
 });
 
 searchInput.addEventListener('input', (e) => filterData(e.target.value));
 
 renderTable(data);
+} catch (error) {
+    console.error("Fel vid visning av data:", error);
+    alert("Ett fel inträffade när tabellen skulle visas.");
+}
 }
 
 displayData();
