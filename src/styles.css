@@ -187,6 +187,7 @@ border-radius: 1em;
   justify-content: center;
   align-items: center;
   margin-bottom: 3em;
+  flex-wrap: nowrap; 
 }
 
 .searchSection p {
@@ -196,6 +197,7 @@ border-radius: 1em;
 
 #searchInput {
   padding: 1em;
+  max-width: 100%;
   width: 20%;
 }
 
@@ -241,9 +243,41 @@ th:last-child {
     font-size: 1.2em;
     margin-left: 0;
   }
+
+  #searchInput {
+    padding: 1em;
+    width: 25%;
+  }
+}
+
+@media (max-width: 870px) {
+  .menu-nav ul {
+    gap: 2.5em;
+  }
+  
+  .menu-nav li {
+    padding-right: 1em;
+  }
 }
 
 @media (max-width: 750px) {
+
+  .searchSection {
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-left: 0.5em;
+  }
+  
+  .searchSection p {
+   font-weight: bold;
+   font-size: 1em;
+  }
+  
+  #searchInput {
+    padding: 1em;
+    width: 30%;
+  }
 
   .information .slideshow-container {
     width: 100%;
@@ -254,10 +288,6 @@ th:last-child {
     width: 70%;
     height: auto;
   }
-
-  main {
-    padding: 0.5em;
-}
 
 .footer-left p {
   font-size: 0.8em;
@@ -281,14 +311,6 @@ h3 {
   margin-left: 3em;
 }
 
-.menu-nav ul {
-  gap: 2.5em;
-}
-
-.menu-nav li {
-  padding-right: 1em;
-}
-
 .slideshow-container p {
   width: 70%;
   line-height: 1.5em;
@@ -296,10 +318,28 @@ h3 {
   margin-left: 1em;
 }
 
-@media (max-width: 520px) {
-  .menu-nav li a {
-    font-size: 0.8em;
+.menu-nav li a {
+  font-size: 1em;
+  white-space: nowrap;
 }
+
+#courseTable {
+  border-collapse: separate;
+  border-spacing: 0 1em;
+  width: 100%;
+  margin-left: 0.5em;
+}
+
+.menu-nav ul {
+  gap: 1.5em;
+}
+
+.menu-nav li {
+  padding-right: 1em;
+}
+
+
+@media (max-width: 520px) {
 
 .footer-right p {
   white-space: normal; 
@@ -339,6 +379,20 @@ h3 {
   margin-right: 1em;
   line-height: 2em;
   width: 85%;
+}
+
+.searchSection p {
+  font-size: 0.8em;
+ }
+
+ #searchInput {
+  padding: 0.5em;
+  width: 40%;
+  font-size: 0.8em;
+}
+
+#courseTable {
+  font-size: 0.8em;
 }
 }
 }
