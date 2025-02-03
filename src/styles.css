@@ -182,6 +182,54 @@ border-radius: 1em;
   margin-left: 4em;
 }
 
+.searchSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 3em;
+}
+
+.searchSection p {
+ font-weight: bold;
+ margin-right: 1em;
+}
+
+#searchInput {
+  padding: 1em;
+  width: 20%;
+}
+
+.table {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; 
+}
+
+a {
+  color: black;
+}
+
+#courseTable tr {
+  text-align: left;
+}
+
+#courseTable {
+  border-collapse: separate;
+  border-spacing: 0 1em;
+  width: 90%;
+}
+
+th {
+  text-decoration: underline;
+  cursor: pointer; 
+}
+
+
+th:last-child {
+  text-decoration: none;
+}
+
 @media (max-width: 1160px) {
 
   .slideshow-container {
