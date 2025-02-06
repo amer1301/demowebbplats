@@ -19,6 +19,34 @@ h1 {
     text-align: center;
 }
 
+.menu-toggle {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  background-color: #dcd7d3;
+}
+
+.menu-toggle .bars {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 1.2em;
+  margin-right: 0;
+  padding: 0.5em;
+  background-color: #dcd7d3;
+}
+
+.menu-toggle .bar {
+  display: block;
+  display: block;
+  width: 1.5em;
+  height: 0.2em;
+  background-color: #000000;
+  margin: 0;
+}
+
 p {
   line-height: 1.5em;
   font-size: 1.2em;
@@ -232,7 +260,66 @@ th:last-child {
   text-decoration: none;
 }
 
-@media (max-width: 1160px) {
+@media (max-width: 1240px) {
+
+  .menu-toggle {
+    display: flex;
+  }
+
+  .menu-toggle .bars {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  #nav-menu {
+    display: none;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: #dcd7d3;
+    width: 85%;
+    z-index: 10;
+    max-width: 100%;
+    box-sizing: border-box;
+    border-radius: 1em;
+  }
+
+.menu-nav li a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.2em;
+    white-space: nowrap;
+  }
+
+ .menu-nav li {
+  align-items: center;
+  display: flex;
+justify-content: center;
+  border-right: 0.5px solid black;
+    padding-right: 1.5em;
+    flex: 1 0 20%;
+  }
+
+  .menu-nav li:last-child {
+border-right: none;
+  }
+
+  .menu-nav li:nth-child(3) {
+    border-right: none;
+  }
+
+  .menu-nav ul {
+    padding-top: 1em;
+    padding-bottom: 1em;
+    list-style-type: none;
+    display: flex;
+    gap: 3em;
+  }
+
+  #nav-menu.active {
+    display: flex;
+  }
 
   .slideshow-container {
     display: block;
@@ -240,23 +327,13 @@ th:last-child {
 
   .slideshow-container p {
     width: 55%;
-    font-size: 1.2em;
+    font-size: 1em;
     margin-left: 0;
   }
 
   #searchInput {
     padding: 1em;
     width: 25%;
-  }
-}
-
-@media (max-width: 870px) {
-  .menu-nav ul {
-    gap: 2.5em;
-  }
-  
-  .menu-nav li {
-    padding-right: 1em;
   }
 }
 
@@ -349,16 +426,24 @@ h3 {
   overflow-wrap: break-word;
 }
 
-.menu-nav li a {
-  font-size: 0.8em;
+#nav-menu {
+  width: 100%;
 }
 
-.menu-nav li {
-  padding-right: 0.5em;
+.menu-nav li a {
+  font-size: 1em;
 }
+.menu-nav li {
+  border-right: none;
+  align-items:flex-start;
+  display: flex;
+justify-content: flex-start;
+    padding-right: 0;
+    flex: 1 0 30%;
+  }
 
 .menu-nav ul {
-  gap: 0.5em;
+  gap: 0;
 }
 
 h3 {
