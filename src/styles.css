@@ -215,10 +215,7 @@ border-radius: 1em;
   justify-content: center;
   align-items: center;
   margin-bottom: 3em;
-<<<<<<< HEAD
-=======
   flex-wrap: nowrap; 
->>>>>>> main
 }
 
 .searchSection p {
@@ -228,10 +225,7 @@ border-radius: 1em;
 
 #searchInput {
   padding: 1em;
-<<<<<<< HEAD
-=======
   max-width: 100%;
->>>>>>> main
   width: 20%;
 }
 
@@ -266,9 +260,6 @@ th:last-child {
   text-decoration: none;
 }
 
-<<<<<<< HEAD
-@media (max-width: 1160px) {
-=======
 @media (max-width: 1240px) {
 
   .menu-toggle {
@@ -300,7 +291,7 @@ th:last-child {
     font-size: 1.2em;
     white-space: nowrap;
   }
-
+}
  .menu-nav li {
   align-items: center;
   display: flex;
@@ -329,7 +320,6 @@ border-right: none;
   #nav-menu.active {
     display: flex;
   }
->>>>>>> main
 
   .slideshow-container {
     display: block;
@@ -345,7 +335,7 @@ border-right: none;
     padding: 1em;
     width: 25%;
   }
-}
+
 
 @media (max-width: 750px) {
 

@@ -15,12 +15,6 @@
         "sharp": "^0.33.5"
     },
     "browserslist": [
-<<<<<<< HEAD
-        "> 0.25%",
-        "not dead",
-        "ie 11"
-    ]
-=======
         ">0.5%",
         "last 2 versions",
         "not dead"
@@ -35,6 +29,5 @@
             ]
         ]
     }
->>>>>>> main
 }
 
