@@ -19,6 +19,33 @@ h1 {
   line-height: 1.5em;
 }
 
+.menu-toggle {
+  cursor: pointer;
+  background-color: #dcd7d3;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+
+.menu-toggle .bars {
+  background-color: #dcd7d3;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 1.2em;
+  margin-right: 0;
+  padding: .5em;
+  display: flex;
+}
+
+.menu-toggle .bar {
+  background-color: #000;
+  width: 1.5em;
+  height: .2em;
+  margin: 0;
+  display: block;
+}
+
 p {
   font-size: 1.2em;
   line-height: 1.5em;
@@ -180,7 +207,110 @@ h3 {
   display: block;
 }
 
-@media (width <= 1160px) {
+.searchSection {
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 3em;
+  display: flex;
+}
+
+.searchSection p {
+  margin-right: 1em;
+  font-weight: bold;
+}
+
+#searchInput {
+  width: 20%;
+  max-width: 100%;
+  padding: 1em;
+}
+
+.table {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+a {
+  color: #000;
+}
+
+#courseTable tr {
+  text-align: left;
+}
+
+#courseTable {
+  border-collapse: separate;
+  border-spacing: 0 1em;
+  width: 90%;
+}
+
+th {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+th:last-child {
+  text-decoration: none;
+}
+
+@media (width <= 1240px) {
+  .menu-toggle {
+    display: flex;
+  }
+
+  .menu-toggle .bars {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+  }
+
+  #nav-menu {
+    z-index: 10;
+    box-sizing: border-box;
+    background-color: #dcd7d3;
+    border-radius: 1em;
+    flex-flow: wrap;
+    width: 85%;
+    max-width: 100%;
+    display: none;
+  }
+
+  .menu-nav li a {
+    color: #000;
+    white-space: nowrap;
+    font-size: 1.2em;
+    text-decoration: none;
+  }
+
+  .menu-nav li {
+    border-right: .5px solid #000;
+    flex: 1 0 20%;
+    justify-content: center;
+    align-items: center;
+    padding-right: 1.5em;
+    display: flex;
+  }
+
+  .menu-nav li:last-child, .menu-nav li:nth-child(3) {
+    border-right: none;
+  }
+
+  .menu-nav ul {
+    gap: 3em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    list-style-type: none;
+    display: flex;
+  }
+
+  #nav-menu.active {
+    display: flex;
+  }
+
   .slideshow-container {
     display: block;
   }
@@ -188,11 +318,33 @@ h3 {
   .slideshow-container p {
     width: 55%;
     margin-left: 0;
-    font-size: 1.2em;
+    font-size: 1em;
+  }
+
+  #searchInput {
+    width: 25%;
+    padding: 1em;
   }
 }
 
 @media (width <= 750px) {
+  .searchSection {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-left: .5em;
+  }
+
+  .searchSection p {
+    font-size: 1em;
+    font-weight: bold;
+  }
+
+  #searchInput {
+    width: 30%;
+    padding: 1em;
+  }
+
   .information .slideshow-container {
     width: 100%;
     max-width: 100%;
@@ -201,10 +353,6 @@ h3 {
   .information .slideshow-container picture img {
     width: 70%;
     height: auto;
-  }
-
-  main {
-    padding: .5em;
   }
 
   .footer-left p, .footer-right p {
@@ -225,19 +373,31 @@ h3 {
     margin-left: 3em;
   }
 
-  .menu-nav ul {
-    gap: 2.5em;
-  }
-
-  .menu-nav li {
-    padding-right: 1em;
-  }
-
   .slideshow-container p {
     width: 70%;
     margin-left: 1em;
     font-size: .8em;
     line-height: 1.5em;
+  }
+
+  .menu-nav li a {
+    white-space: nowrap;
+    font-size: 1em;
+  }
+
+  #courseTable {
+    border-collapse: separate;
+    border-spacing: 0 1em;
+    width: 100%;
+    margin-left: .5em;
+  }
+
+  .menu-nav ul {
+    gap: 1.5em;
+  }
+
+  .menu-nav li {
+    padding-right: 1em;
   }
 
   @media (width <= 520px) {
@@ -249,16 +409,25 @@ h3 {
       overflow-wrap: break-word;
     }
 
+    #nav-menu {
+      width: 100%;
+    }
+
     .menu-nav li a {
-      font-size: .8em;
+      font-size: 1em;
     }
 
     .menu-nav li {
-      padding-right: .5em;
+      border-right: none;
+      flex: 1 0 30%;
+      justify-content: flex-start;
+      align-items: flex-start;
+      padding-right: 0;
+      display: flex;
     }
 
     .menu-nav ul {
-      gap: .5em;
+      gap: 0;
     }
 
     h3, .bar-brown {
@@ -275,6 +444,20 @@ h3 {
       width: 85%;
       margin-right: 1em;
       line-height: 2em;
+    }
+
+    .searchSection p {
+      font-size: .8em;
+    }
+
+    #searchInput {
+      width: 40%;
+      padding: .5em;
+      font-size: .8em;
+    }
+
+    #courseTable {
+      font-size: .8em;
     }
   }
 }

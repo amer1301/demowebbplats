@@ -8,20 +8,41 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Great+Vibes&family=Karla:ital,wght@0,200..800;1,200..800&family=Lato&family=MonteCarlo&display=swap" rel="stylesheet">
-    <script src="main.js" type="module"></script>
+    <script type="module">
+        import './main.js';
+        import './menu.js';
+      </script>
+      
 </head>
 <body>
         <header class="header">
+            <nav class="header-nav">
+                <button class="menu-toggle" id="menu-toggle">
+                  <span class="bars">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                  </span>
+                  <span class="close" style="display: none;">
+                    <span class="close-icon">X</span>
+                  </span>
+                </button>
+              </nav>
     <h1>Information om moment 1</h1>
     <h2>Automatisering & publicering</h2>
     <div class="bar"></div>
 
     <nav class="menu-nav">
-        <ul id="nav-meny">
+        <ul id="nav-menu">
         <li><a href="index.html"><span class="underline">Startsida</span></a></li>
         <li><a href="fotografier.html">Fotografier</a></li>
         <li><a href="arbetsprocess.html">Arbetsprocess</a></li>
         <li><a href="moment2.html">Moment 2</a></li>
+<<<<<<< HEAD
+=======
+        <li><a href="startsida.html">Moment 3</a></li>
+        <li><a href="SASS.html">Sass</a></li>
+>>>>>>> main
     </ul>
         </nav>
 </header>

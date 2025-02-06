@@ -8,7 +8,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Great+Vibes&family=Karla:ital,wght@0,200..800;1,200..800&family=Lato&family=MonteCarlo&display=swap" rel="stylesheet">
-    <script src="main.js" type="module"></script>
+    <script type="module">
+        import './main.js';
+        import './menu.js';
+      </script>
+      
 </head>
 <body>
         <header class="header">
@@ -22,6 +26,11 @@
         <li><a href="fotografier.html">Fotografier</a></li>
         <li><a href="arbetsprocess.html">Arbetsprocess</a></li>
         <li><a href="moment2.html">Moment 2</a></li>
+<<<<<<< HEAD
+=======
+        <li><a href="startsida.html">Moment 3</a></li>
+        <li><a href="SASS.html">Sass</a></li>
+>>>>>>> main
     </ul>
         </nav>
 </header>
@@ -32,35 +41,35 @@
 
         <div class="slideshow-container">
             <picture id="slide1">
-            <source srcset="skogen1.jpg?as=avif&width=500" type="image/avif">
-            <source srcset="skogen1.jpg?as=webp&width=500" type="image/webp">
-            <img src="skogen1.jpg?width=500" alt="flicka i skogen med paraply och ryggsäck">
+            <source srcset="skogen1.jpeg?as=avif&width=500" type="image/avif">
+            <source srcset="skogen1.jpeg?as=webp&width=500" type="image/webp">
+            <img src="skogen1.jpeg?width=500" alt="flicka i skogen med paraply och ryggsäck">
         </picture>
 
         <picture id="slide2">
-            <source srcset="skogen2.jpg?as=avif&width=500" type="image/avif">
-            <source srcset="skogen2.jpg?as=webp&width=500" type="image/webp">
-            <img src="skogen2.jpg?width=500" alt="flicka i skogen med uppfällbart paraply framför en bänk">
+            <source srcset="skogen2.jpeg?as=avif&width=500" type="image/avif">
+            <source srcset="skogen2.jpeg?as=webp&width=500" type="image/webp">
+            <img src="skogen2.jpeg?width=500" alt="flicka i skogen med uppfällbart paraply framför en bänk">
         </picture>
 
         <picture id="slide3">
-            <source srcset="skogen3.jpg?as=avif&width=500" type="image/avif">
-            <source srcset="skogen3.jpg?as=webp&width=500" type="image/webp">
-            <img src="skogen3.jpg?width=500" alt="flicka i skogen hänger med armen utöver staket">
+            <source srcset="skogen3.jpeg?as=avif&width=500" type="image/avif">
+            <source srcset="skogen3.jpeg?as=webp&width=500" type="image/webp">
+            <img src="skogen3.jpeg?width=500" alt="flicka i skogen hänger med armen utöver staket">
         </picture>
 
         <picture id="slide4">
-            <source srcset="skogen4.jpg?as=avif&width=500" type="image/avif">
-            <source srcset="skogen4.jpg?as=webp&width=500" type="image/webp">
-            <img src="skogen4.jpg?width=500" alt="flicka i skogen som ser ut över skogen och en bro">
+            <source srcset="skogen4.jpeg?as=avif&width=500" type="image/avif">
+            <source srcset="skogen4.jpeg?as=webp&width=500" type="image/webp">
+            <img src="skogen4.jpeg?width=500" alt="flicka i skogen som ser ut över skogen och en bro">
         </picture>
 
         <picture id="slide5">
-            <source srcset="skogen5.jpg?as=avif&width=500" type="image/avif">
-            <source srcset="skogen5.jpg?as=webp&width=500" type="image/webp">
-            <img src="skogen5.jpg?width=500" alt="flicka i skogen vid en buske">
+            <source srcset="skogen5.jpeg?as=avif&width=500" type="image/avif">
+            <source srcset="skogen5.jpeg?as=webp&width=500" type="image/webp">
+            <img src="skogen5.jpeg?width=500" alt="flicka i skogen vid en buske">
         </picture>
-    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+        <p>Bilderna som syns på undersidan fotografier.html, togs en höstdag tillsammans med min dotter på en fin minneslund inte långt från där vi bor i Sundsvall. Fem bilder har valts ut för att med hjälp av JavaScript, skapa ett bildspel där varje bild visas i tre sekunder och sedan visas de alla om igen i en oändlig loop. Bildernas ursprungliga format var PNG och de har sedan med hjälp av Parcel, optimerats och komprimerats. För att påvisa komprimeringen används en av dessa bilder som exempel. En av mina fem bilder hade en storlek på 11.8 MB i PNG-format innan de optimerats av Parcel. Efter optimeringen hade den istället en storlek på 55.5kB i Avif-format. Med hjälp av picture-elementet så användes fallbacks, avif- och webP-format för att stödja fler webbläsare. Kommandot npm run start kördes i terminalen för att skapa bildspelet.</p> 
 </div>    
 
 </section>
