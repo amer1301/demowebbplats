@@ -19,6 +19,10 @@ h1 {
   text-align: center;
 }
 
+.titel {
+  text-align: center;
+}
+
 .menu-toggle {
 display: none;
 align-items: center;

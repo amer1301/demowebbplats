@@ -19,6 +19,10 @@ h1 {
   line-height: 1.5em;
 }
 
+.titel {
+  text-align: center;
+}
+
 .menu-toggle {
   cursor: pointer;
   background-color: #dcd7d3;
