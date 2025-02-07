@@ -18,3 +18,53 @@ body {
 #nav-menu {
     background-color: $lighter-color;
 }
+
+.images {
+    overflow: hidden;
+    cursor: pointer;
+    margin-top: 5em;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    gap: 5em;
+
+    img:hover {
+        transform: scale(1.05);
+        transition: transform 0.5s ease;
+        opacity: 95%;
+    }
+
+}
+
+.overlay-text {
+    position: absolute;
+    top: 60%; 
+    left: 8%;   
+    color: white;  
+    font-size: 24px;  
+    font-weight: bold;   
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    box-sizing: border-box;
+}
+.overlay-text2 {
+    position: absolute;
+    top: 60%;  
+    left: 50%;  
+    transform: translate(-50%, -50%); 
+    color: white;
+    font-size: 24px; 
+    font-weight: bold;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.overlay-text3 {
+    position: absolute;
+    top: 60%; 
+    left: 89%; 
+    transform: translate(-50%, -50%); 
+    color: white;  
+    font-size: 24px;   
+    font-weight: bold; 
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
