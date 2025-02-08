@@ -1,6 +1,6 @@
 $font-stack: Times New Roman, sans-serif;
 $primary-color: #E4B1F0;
-$lighter-color: lighten($primary-color, 20%);
+$lighter-color: lighten($primary-color, 10%);
 $font-size-title: 1.8em;
 
 @mixin button($bg-color, $text-color, $padding: 1em, $border-radius: 5px) {
@@ -32,6 +32,12 @@ $font-size-title: 1.8em;
 body {
     background-color: $primary-color;
     font: 100% $font-stack;
+}
+
+main {
+    padding: 1em;
+    max-width: 1140px;
+    margin: 0 auto;
 }
 
 .menu-nav li a:hover {
@@ -95,3 +101,34 @@ picture {
     .button {
         @include button(#E4B1F0, white);
       }
+    
+
+      .recept {
+            box-sizing: border-box;
+            background-color: $lighter-color;
+            border-radius: 1em;
+            width: 50%;
+            max-width: 100%;
+            padding-bottom: 3em;
+            margin: 3em auto;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+        }
+
+        div {
+            display: none;
+        }
+
+        h4 {
+            color: black;
+        }
+        
+        p {
+            color: black;
+        }
+
+        ul {
+            color: black;
+            line-height: 1.8em;
+        }
