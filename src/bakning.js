@@ -1,24 +1,24 @@
-        // Hämta alla knappar
-        const buttons = document.querySelectorAll('.button');
+document.addEventListener("DOMContentLoaded", function() {
+    const buttons = document.querySelectorAll('.button');
 
-        // Lägg till en eventlyssnare på varje knapp
-        buttons.forEach(button => {
-            button.addEventListener('click', function() {
-                // Hämta receptet som knappen refererar till
-                const receptId = this.getAttribute('data-recept');
+    buttons.forEach(button => {
+        button.addEventListener('click', function() {
+            // Hämta receptet som knappen refererar till
+            const receptId = this.getAttribute('data-recept');
 
-                // Dölj alla receptsektioner
-                document.querySelectorAll('.recept div').forEach(div => {
-                    div.style.display = 'none';
-                });
-
-                // Visa rätt receptsektion
-                const receptSection = document.getElementById(receptId);
-                if (receptSection) {
-                    receptSection.style.display = 'block';
-
-                    // Scrolla till receptsektionen
-                    receptSection.scrollIntoView({ behavior: 'smooth' });
-                }
+            // Dölj alla recept-sektioner
+            document.querySelectorAll('.recept div').forEach(div => {
+                div.style.display = 'none';
             });
+
+            // Visa rätt recept-sektion
+            const receptSection = document.getElementById(receptId);
+            if (receptSection) {
+                receptSection.style.display = 'block'; // Gör receptet synligt
+
+                // Scrolla till receptsektionen
+                receptSection.scrollIntoView({ behavior: 'smooth' });
+            }
         });
+    });
+});
