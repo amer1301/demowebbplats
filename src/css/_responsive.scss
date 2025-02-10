@@ -79,3 +79,39 @@ ol {
 padding: 0.5em;
     }
 }
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: $dark-mode;
+    }
+
+    h1, h2, h3, h4 {
+        color: $button-text-color;
+    }
+
+    .recept {
+        background-color: $dark-mode-recept;
+        ul {
+            color: $button-text-color;
+        }
+        p {
+            color: $button-text-color;
+        }
+        ol {
+            color: $button-text-color;
+        }
+        h4 {
+            color: $button-text-color;
+        }
+        h5 {
+            color: $button-text-color;
+        }
+    }
+    #nav-menu {
+        background-color: $dark-mode;
+
+        li a {
+            color: $button-text-color;
+        }
+      }
+}

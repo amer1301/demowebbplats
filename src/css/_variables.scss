@@ -3,6 +3,8 @@ $button-text-color: #fff;
 $primary-color: #E4B1F0;
 $lighter-color: lighten($primary-color, 10%);
 $darker-color: darken($primary-color, 20%);
+$dark-mode: darken($primary-color, 60%);
+$dark-mode-recept: #441752;
 $font-size-title: 3em;
 $font-size-title-small: 2.2em;
 $font-size-title-mobile: 1.6em;
