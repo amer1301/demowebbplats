@@ -17,6 +17,20 @@
         width: 100%;
     }
 }
+
+.recept {
+    p {
+    font-size: $font-size-recept-small;
+}
+
+ul {
+    font-size: $font-size-recept-small;
+}
+
+ol {
+    font-size: $font-size-recept-small;
+}
+}
 }
 
 @include media-query('mobile') {
