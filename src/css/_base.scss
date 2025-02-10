@@ -1,0 +1,58 @@
+body {
+    background-color: $primary-color;
+    font: 100% $font-stack;
+}
+
+main {
+    padding: 1em;
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.titel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+
+img {
+    height: auto;
+    width: 3em;
+    margin-bottom: 1.5em;
+}
+:hover {
+    transform: none;
+    transition: none;
+    opacity: 100%;
+}
+}
+
+
+h2 {
+    font-family: $font-title;
+    font-size: $font-size-title;
+}
+
+h3 {
+    font-family: $font-title;
+    font-weight: lighter;
+    font-size: $font-size-title;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 2em;
+    white-space: nowrap;
+}
+
+h4 {
+text-align: center;
+font-family: $font-title;
+font-size: $font-size-title;
+font-weight: lighter;
+}
+
+h5 {
+    text-align: center;
+    font-family: $font-title;
+    font-size: $font-size-text;
+    font-weight: lighter;
+}

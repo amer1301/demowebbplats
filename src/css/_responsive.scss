@@ -1,0 +1,23 @@
+@include media-query('tablet') {
+
+}
+
+@include media-query('extra') {
+    h4 {
+        font-size: $font-size-title-small;
+    }
+
+    .recept {
+        width: 90%;
+    }
+
+    .images {
+        gap: 0.5em;
+     img {
+        width: 100%;
+    }
+}
+}
+
+@include media-query('mobile') {
+}

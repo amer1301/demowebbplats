@@ -1,0 +1,35 @@
+@mixin button($bg-color, $text-color, $padding: 1em, $border-radius: 5px) {
+    background-color: $bg-color;
+    color: $text-color;
+    padding: $padding;
+    border-radius: $border-radius;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font: 100% $font-stack;
+  font-size: $font-size-button;
+  opacity: 80%;
+
+  
+    &:hover {
+      background-color: darken($bg-color, 10%);
+    }
+  
+    &:focus {
+      outline: none;
+    }
+  }
+
+  @mixin media-query($size) {
+    @if $size == 'mobile' {
+        @media (max-width: 376px) { @content; }
+    } @else if $size == 'extra' {
+        @media (max-width: 750px) { @content; }
+    } @else if $size == 'tablet' {
+        @media (min-width: 1024px) and (max-width: 1024px) { @content; }
+    }
+}

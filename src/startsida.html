@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <title>Demo Webbplats</title>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/main.scss">
     <script type="module">
         import './menu.js';
@@ -26,7 +27,10 @@
                 </button>
               </nav>
     <h1>Moment 3</h1>
+    <section class="titel">
     <h2>Cake By Persdotter</h2>
+    <img src="bakning/cupcake.svg" alt="logotyp">
+</section>
     <div class="bar"></div>
 
     <nav class="menu-nav">
@@ -43,9 +47,58 @@
     </head>
     <body>
         <main>
-            <section class="titel">
 <h3>Välkommen till mina recept!</h3>
-<img src="bakning/cupcake.svg" alt="logotyp">
+
+
+<section class="bakning">
+
+    <div class="cake">
+    <picture>
+        <source srcset="bakning/sjojungfru_tarta.jpg?as=avif&width=600" type="image/avif">
+        <source srcset="bakning/sjojungfru_tarta.jpg?as=webp&width=600" type="image/webp">
+        <img src="bakning/sjojungfru_tarta.jpg?width=600" alt="Sjöjungfrutårta">
+        </picture>
+        </div>
+
+        <div class="cake">
+        <picture>
+            <source srcset="bakning/cakesicles.jpg?as=avif&width=600" type="image/avif">
+            <source srcset="bakning/cakesicles.jpg?as=webp&width=600" type="image/webp">
+            <img src="bakning/cakesicles.jpg?width=600" alt="cakesicles">
+            </picture>
+        </div>
+
+        <div class="cake">
+            <picture>
+                <source srcset="bakning/frost_cupcakes.jpg?as=avif&width=600" type="image/avif">
+                <source srcset="bakning/frost_cupcakes.jpg?as=webp&width=600" type="image/webp">
+                <img src="bakning/frost_cupcakes.jpg?width=600" alt="Cupcakes frost-tema">
+                </picture>
+                </div>
+
+                <div class="cake">
+                <picture>
+                    <source srcset="bakning/tarta_frost.jpg?as=avif&width=600" type="image/avif">
+                    <source srcset="bakning/tarta_frost.jpg?as=webp&width=600" type="image/webp">
+                    <img src="bakning/tarta_frost.jpg?width=600" alt="Cupcakes frost-tema">
+                    </picture>
+                </div>
+
+                <div class="cake">
+                <picture>
+                    <source srcset="bakning/ros_tarta.jpg?as=avif&width=600" type="image/avif">
+                    <source srcset="bakning/ros_tarta.jpg?as=webp&width=600" type="image/webp">
+                    <img src="bakning/ros_tarta.jpg?width=600" alt="Tårta med rosor">
+                    </picture>
+</div>
+
+<div class="cake">
+                    <picture>
+                        <source srcset="bakning/katt_tarta.jpg?as=avif&width=600" type="image/avif">
+                        <source srcset="bakning/katt_tarta.jpg?as=webp&width=600" type="image/webp">
+                        <img src="bakning/katt_tarta.jpg?width=600" alt="Katt-tårta">
+                        </picture>
+                    </div>
 </section>
 <h4>Klicka på bilden nedan för det recept du vill se</h4>
 
@@ -78,23 +131,23 @@
 <section class="images">
 
     <picture>
-        <source srcset="bakning/nutella_cookies.jpg?as=avif&width=300" type="image/avif">
-        <source srcset="bakning/nutella_cookies.jpg?as=webp&width=300" type="image/webp">
-        <img src="bakning/nutella_cookies.jpg?width=300" alt="nutellakakor">
-        <button class="button" data-recept="nutella_cookies">Nutella-cookies</button>
-    </picture>
-
-    <picture>
-        <source srcset="bakning/skogscake.jpg?as=avif&width=400" type="image/avif">
-        <source srcset="bakning/skogscake.jpg?as=webp&width=400" type="image/webp">
-        <img src="bakning/skogscake.jpg?width=400" alt="skogstårta">
+        <source srcset="bakning/skogscake.jpg?as=avif&height=300" type="image/avif">
+        <source srcset="bakning/skogscake.jpg?as=webp&height=300" type="image/webp">
+        <img src="bakning/skogscake.jpg?height=300" alt="skogstårta">
         <button class="button" data-recept="forestcake">Skogstårta</button>
     </picture>
 
     <picture>
-        <source srcset="bakning/cupcakes.jpg?as=avif&width=300" type="image/avif">
-        <source srcset="bakning/cupcakes.jpg?as=webp&width=300" type="image/webp">
-        <img src="bakning/cupcakes.jpg?width=300" alt="cupcakes">
+        <source srcset="bakning/nutella_cookies.jpg?as=avif&height=275" type="image/avif">
+        <source srcset="bakning/nutella_cookies.jpg?as=webp&height=275" type="image/webp">
+        <img src="bakning/nutella_cookies.jpg?height=275" alt="nutellakakor">
+        <button class="button" data-recept="nutella_cookies">Nutella-cookies</button>
+    </picture>
+
+    <picture>
+        <source srcset="bakning/cupcakes.jpg?as=avif&height=300" type="image/avif">
+        <source srcset="bakning/cupcakes.jpg?as=webp&height=300" type="image/webp">
+        <img src="bakning/cupcakes.jpg?height=300" alt="cupcakes">
         <button class="button" data-recept="cupcakes">Cupcakes</button>
     </picture>
 

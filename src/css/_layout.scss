@@ -1,0 +1,96 @@
+.images {
+    overflow: hidden;
+    cursor: pointer;
+    margin-top: 5em;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    gap: 1em;
+    width: 100%;
+    height: auto;
+}
+
+picture {
+    position: relative;
+  
+    img:hover {
+        transform: scale(1.05);
+        transition: transform 0.5s ease;
+        opacity: 90%;
+    }
+
+    .button {
+        @include button(#E4B1F0, white);
+      }
+    }
+    
+
+      .recept {
+            box-sizing: border-box;
+            background-color: $lighter-color;
+            border-radius: 1em;
+            width: 70%;
+            max-width: 100%;
+            padding-bottom: 3em;
+            margin: 3em auto;
+            align-items: center;
+            justify-content: center;
+        
+        div {
+            display: none;
+        }
+
+        h4 {
+            padding-top: 1em;
+            color: black;
+        }
+        
+        p {
+            color: black;
+            margin-top: 2em;
+            margin-left: 3em;
+            font-size: $font-size-recept;
+            font-family: $font-stack;
+            margin-right: 3em;
+        }
+
+        ul {
+            color: black;
+            line-height: 1.8em;
+            margin-left: 3em;
+            font-size: $font-size-recept;
+            margin-right: 3em;
+        }
+
+        ol {
+            margin-left: 3em;
+            line-height: 1.8em;
+            font-size: $font-size-recept;
+            margin-right: 3em;
+        }
+    }
+
+        .bakning {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 0.5em;
+            margin: 0 auto;
+            max-width: 1200px;
+
+        img:hover {
+            transition: none;
+            transform: none;
+            opacity: 100%;
+        }
+    }
+
+    .cake picture {
+        width: 100%;
+    height: auto;
+    }
+    .cake img {
+        width: 100%;
+    height: auto;
+    border-radius: 0.5em;
+    }

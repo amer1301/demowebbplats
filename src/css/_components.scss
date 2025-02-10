@@ -1,0 +1,15 @@
+#nav-menu {
+    background-color: $primary-color;
+  }
+
+.menu-nav li a:hover {
+    color: $lighter-color;
+  }
+
+.menu-toggle {
+    background-color: $primary-color;
+
+    .bars {
+        background-color: $primary-color;
+    }
+}
