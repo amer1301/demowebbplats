@@ -1,14 +1,19 @@
 @include media-query('tablet') {
+.recept {
+    width: 80%;
+}
 
+.images {
+    gap: 0.5em;
+ img {
+    width: 100%;
+}
+}
 }
 
 @include media-query('extra') {
     h4 {
         font-size: $font-size-title-small;
-    }
-
-    .recept {
-        width: 90%;
     }
 
     .images {
@@ -18,7 +23,9 @@
     }
 }
 
+
 .recept {
+    width: 90%;
     p {
     font-size: $font-size-recept-small;
 }
@@ -34,4 +41,41 @@ ol {
 }
 
 @include media-query('mobile') {
+
+    h2 {
+        font-size: $font-size-title-small;
+    }
+
+    h3 {
+        font-size: $font-size-title-mobile;
+    }
+
+    h4 {
+        font-size: $font-size-title-mobile;
+        margin-top: 2em;
+    }
+
+    .images {
+        margin-top: 1em;
+    }
+
+    .recept {
+        width: 100%; 
+        p {
+        margin-left: 0.5em;
+        margin-right: 0.5em;
+    }
+
+    ul {
+        margin-left: 0.5em;
+    }
+
+    ol {
+        margin-left: 0.5em;
+    }
+}
+
+    picture .button {
+padding: 0.5em;
+    }
 }
