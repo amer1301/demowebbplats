@@ -43,7 +43,14 @@
         <main>
             <section class="utvardering">
 <h3>Utvärdering</h3>
-<p>bla bla</p>
+<p>Vid starten av skapandet för hemsidan användes @import för att importera de undersidor som skapandes för scss i min main.scss. När jag sedan gick igenom anteckningarna jag gjort från föreläsningar och dylikt så noterades att det var det äldre sättet att inkludera
+partials på, och att istället skulle @use användas. Personligen ansåg jag att det var betydligt enklare att använda @import då jag inte behövde hänvisa till vilken partial som information skulle hämtas från vid angivning av variablerna.
+Jag valde att skapa lite interaktion med hjälp av JavaScript för att användaren skulle kunna klicka fram olika recept som hen var intresserad av. I och med detta kunde jag även skapa mixins i form av enhetliga knappar. Mixins användades även för responsiviteten på hemsidan
+samt för att implementera inställningar för mörkerläge.
+</p>
+<p>Sex olika partials skapades. Dessa var _base som innehöll lite grundläggande egenskaper för hemsidan, _components som innehöll meny-navigeringen, _layout som innehöll egenskaper kopplade till hemsidans design, _mixins som innehöll just mixins, _responsive för responsiva element samt _variables där variablerna definierades.</p>
+<p>Variablen-namnen är något som absolute skulle kunna förbättras och något jag ska tänka på i framtiden. Nesting användes där de ansågs kunna underlätta kodningen och extend användes för egenskaper som var gemensamma för de olika elementen, i detta fall valdes positionering som detta.</p>
+<p>Primärfärgen valdes efter vad som ansågs vara lämpligt för en recept-sida för bakning och color functions tillämpades vid bland annat hovring för att skapa en mörkare eller ljusare färg.</p>
             </section>
         </main>
     </body>
