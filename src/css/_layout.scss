@@ -44,11 +44,6 @@ picture {
         display: none;
     }
 
-    h4 {
-        padding-top: 1em;
-        color: black;
-    }
-
     p {
         color: black;
         line-height: 2em;
@@ -99,5 +94,35 @@ picture {
         width: 100%;
         height: auto;
         border-radius: 0.5em;
+    }
+}
+
+.utvardering {
+    background-color: $lighter-color;
+    border-radius: 1em;
+    padding-bottom: 3em;
+    box-sizing: border-box;
+    position: relative;
+    width: 100%;
+    max-width: 100%; 
+
+    h3 {
+        font-family: $font-title;
+        font-weight: lighter;
+        font-size: $font-size-title;
+        text-align: center;
+        margin: 0 auto;
+        margin-bottom: 2em;
+        white-space: nowrap;
+    }
+
+    p {
+        color: black;
+        line-height: 2em;
+        margin-top: 2em;
+        margin-left: 3em;
+        font-size: $font-size-recept;
+        font-family: $font-stack;
+        margin-right: 3em;
     }
 }
