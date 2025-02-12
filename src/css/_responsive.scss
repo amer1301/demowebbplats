@@ -1,4 +1,7 @@
-@include media-query('tablet') {
+@use "variables";
+@use "mixins";
+
+@include mixins.media-query('tablet') {
 .recept {
     width: 80%;
 }
@@ -11,9 +14,9 @@
 }
 }
 
-@include media-query('extra') {
+@include mixins.media-query('extra') {
     h4 {
-        font-size: $font-size-title-small;
+        font-size: variables.$font-size-title-small;
     }
 
     .images {
@@ -27,31 +30,31 @@
 .recept {
     width: 90%;
     p {
-    font-size: $font-size-recept-small;
+    font-size: variables.$font-size-recept-small;
 }
 
 ul {
-    font-size: $font-size-recept-small;
+    font-size: variables.$font-size-recept-small;
 }
 
 ol {
-    font-size: $font-size-recept-small;
+    font-size: variables.$font-size-recept-small;
 }
 }
 }
 
-@include media-query('mobile') {
+@include mixins.media-query('mobile') {
 
     h2 {
-        font-size: $font-size-title-small;
+        font-size: variables.$font-size-title-small;
     }
 
     h3 {
-        font-size: $font-size-title-mobile;
+        font-size: variables.$font-size-title-mobile;
     }
 
     h4 {
-        font-size: $font-size-title-mobile;
+        font-size: variables.$font-size-title-mobile;
         margin-top: 2em;
     }
 
@@ -82,36 +85,36 @@ padding: 0.5em;
 
 @media (prefers-color-scheme: dark) {
     body {
-        background-color: $dark-mode;
+        background-color: variables.$dark-mode;
     }
 
     h1, h2, h3, h4 {
-        color: $button-text-color;
+        color: variables.$button-text-color;
     }
 
     .recept {
-        background-color: $dark-mode-recept;
+        background-color: variables.$dark-mode-recept;
         ul {
-            color: $button-text-color;
+            color: variables.$button-text-color;
         }
         p {
-            color: $button-text-color;
+            color: variables.$button-text-color;
         }
         ol {
-            color: $button-text-color;
+            color: variables.$button-text-color;
         }
         h4 {
-            color: $button-text-color;
+            color: variables.$button-text-color;
         }
         h5 {
-            color: $button-text-color;
+            color: variables.$button-text-color;
         }
     }
     #nav-menu {
-        background-color: $dark-mode;
+        background-color: variables.$dark-mode;
 
         li a {
-            color: $button-text-color;
+            color: variables.$button-text-color;
         }
       }
 }

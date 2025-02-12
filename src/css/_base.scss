@@ -1,6 +1,8 @@
+@use "variables";
+
 body {
-    background-color: $primary-color;
-    font: 100% $font-stack;
+    background-color: variables.$primary-color;
+    font: 100% variables.$font-stack;
 }
 
 main {
@@ -29,14 +31,14 @@ img {
 
 
 h2 {
-    font-family: $font-title;
-    font-size: $font-size-title;
+    font-family: variables.$font-title;
+    font-size: variables.$font-size-title;
 }
 
 h3 {
-    font-family: $font-title;
+    font-family: variables.$font-title;
     font-weight: lighter;
-    font-size: $font-size-title;
+    font-size: variables.$font-size-title;
     text-align: center;
     margin: 0 auto;
     margin-bottom: 2em;
@@ -45,14 +47,14 @@ h3 {
 
 h4 {
 text-align: center;
-font-family: $font-title;
-font-size: $font-size-title;
+font-family: variables.$font-title;
+font-size: variables.$font-size-title;
 font-weight: lighter;
 }
 
 h5 {
     text-align: center;
-    font-family: $font-title;
-    font-size: $font-size-text;
+    font-family: variables.$font-title;
+    font-size: variables.$font-size-text;
     font-weight: lighter;
 }
