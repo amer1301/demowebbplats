@@ -1,6 +1,8 @@
+@use "variables";
+
 @mixin button($primary-color, $button-text-color, $padding: 1em, $border-radius: 5px) {
-    background-color: $primary-color;
-    color: $button-text-color;
+    background-color: variables.$primary-color;
+    color: variables.$button-text-color;
     padding: $padding;
     border-radius: $border-radius;
     border: none;
@@ -10,13 +12,13 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font: 100% $font-stack;
-    font-size: $font-size-button;
+    font: 100% variables.$font-stack;
+    font-size: variables.$font-size-button;
     opacity: 80%;
 
 
     &:hover {
-        background-color: $darker-color;
+        background-color: variables.$darker-color;
     }
 
     &:focus {

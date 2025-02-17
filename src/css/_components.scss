@@ -1,15 +1,17 @@
+@use "variables";
+
 #nav-menu {
-    background-color: $primary-color;
+    background-color: variables.$primary-color;
   }
 
 .menu-nav li a:hover {
-    color: $lighter-color;
+    color: variables.$lighter-color;
   }
 
 .menu-toggle {
-    background-color: $lighter-color;
+    background-color: variables.$lighter-color;
 
     .bars {
-        background-color: $lighter-color;
+        background-color: variables.$lighter-color;
     }
 }

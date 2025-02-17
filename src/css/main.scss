@@ -1,6 +1,7 @@
-@import 'variables';
-@import 'mixins';
-@import 'base';
-@import 'components';
-@import 'layout';
-@import 'responsive';
+@use "variables";
+@use "mixins";
+@use "base";
+@use "components";
+@use "layout";
+@use "responsive";
+@use "keyframes";
