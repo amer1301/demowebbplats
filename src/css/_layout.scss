@@ -1,5 +1,6 @@
 @use "variables";
 @use "mixins";
+@use "keyframes";
 
 %flex-center {
     display: flex;
@@ -130,6 +131,113 @@ picture {
     }
 }
 
-.titel-animeringar h2 {
+.titel-animeringar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+gap: 2em;
+img {
+    margin-bottom: 2em;
+    animation: rotate 3s infinite alternate linear;
+}
+h2 {
 font-family: variables.$font-stack;
 }
+}
+
+#backgroundImage {
+        height: 500px;
+        background-image: url(../bakning/subway_cookies.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        width: 100%;
+        margin: 0 auto;
+        animation: scaleBackground 10s infinite alternate linear;
+    }
+
+    .text-shadow h3 {
+        animation: shadowAnimation 2s infinite alternate;
+        font-size: variables.$font-size-animation;
+    }
+
+    p {
+        text-align: center;
+        margin-top: 0;
+        margin-bottom: 3em;
+    }
+
+    .cake-slices {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    gap: 9em;
+    }
+
+    .slice1 {
+        animation:scale 2s linear infinite alternate;
+        animation-play-state: running;
+    }
+
+    .slice1:hover {
+        animation-play-state: paused;
+    }
+
+    .slice2 {
+        animation: rotateX 2s linear infinite alternate;
+        animation-play-state: running;
+    }
+
+    .slice2:hover {
+        animation-play-state: paused;
+    }
+
+    .slice3 {
+        animation: rotateY 2s linear infinite alternate;
+        animation-play-state: running;
+    }
+        .slice3:hover {
+            animation-play-state: paused;
+        }
+    
+
+        .cakes {
+            margin-top: 6em;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            width: 100%;
+        }
+
+        .cake1 {
+            animation: moveLeft 5s linear infinite alternate;
+            animation-play-state: running;
+            position: absolute;
+        }
+
+        .cake1:hover {
+            animation-play-state: paused;
+        }
+
+        .cake2 {
+            animation: moveDownUp 4s ease-in-out infinite alternate;
+            animation-play-state: running;
+            position: absolute;
+        }
+
+        
+        .cake2:hover {
+            animation-play-state: paused;
+        }
+
+        .cake3 {
+            animation: moveRight 5s linear infinite alternate;
+            animation-play-state: running;
+            position: absolute;
+        }
+
+        
+        .cake3:hover {
+            animation-play-state: paused;
+        }
