@@ -92,6 +92,7 @@ nav {
 }
 
 .menu-nav li {
+  white-space: nowrap;
   border-right: .5px solid #000;
   padding-right: 2.5em;
 }
@@ -260,7 +261,7 @@ th:last-child {
   text-decoration: none;
 }
 
-@media (width <= 1240px) {
+@media (width <= 1385px) {
   .menu-toggle {
     display: flex;
   }
@@ -291,6 +292,7 @@ th:last-child {
   }
 
   .menu-nav li {
+    white-space: nowrap;
     border-right: .5px solid #000;
     flex: 1 0 20%;
     justify-content: center;
