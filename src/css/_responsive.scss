@@ -12,6 +12,27 @@
     width: 100%;
 }
 }
+
+.titel-animeringar img {
+    width: 10%;
+}
+
+#backgroundImage {
+    height: 400px;
+}
+
+.text-shadow h3 {
+    font-size: variables.$font-size-title;
+}
+
+.slice1 img,
+.slice2 img,
+.slice3 img {
+    width: 80%;
+}
+.cake1 img, .cake2 img, .cake3 img {
+    transform: scale(0.6);
+}
 }
 
 @include mixins.media-query('extra') {
@@ -40,6 +61,36 @@ ul {
 ol {
     font-size: variables.$font-size-recept-small;
 }
+}
+
+.titel-animeringar img {
+    width: 10%;
+}
+
+#backgroundImage {
+    height: 200px;
+}
+
+.text-shadow h3 {
+    font-size: variables.$font-size-title-small;
+}
+
+.slice1 img,
+.slice2 img,
+.slice3 img {
+    transform: scale(0.4);
+}
+.cake1 img, .cake2 img, .cake3 img {
+    transform: scale(0.4);
+}
+
+p {
+    font-size: variables.$font-size-recept-small;
+    margin-left: 4em;
+}
+
+.cake-slices {
+    gap: 1em;
 }
 }
 
@@ -81,6 +132,14 @@ ol {
     picture .button {
 padding: 0.5em;
     }
+
+    .titel-animeringar img {
+        width: 15%;
+    }
+
+.cake-slices {
+    gap: 0.2em;
+}
 }
 
 @media (prefers-color-scheme: dark) {
