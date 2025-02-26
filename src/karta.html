@@ -9,6 +9,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Great+Vibes&family=Karla:ital,wght@0,200..800;1,200..800&family=Lato&family=MonteCarlo&display=swap" rel="stylesheet">
     <script src="menu.js" defer></script>
+    <script src="karta.js" defer></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
       
 </head>
 <body>
@@ -44,6 +48,19 @@
         </nav>
 </header>
 <main>
+
+    <section id="search-section">
+        <label for="location-input">Skriv in en plats:&nbsp;</label>
+        <input type="text" id="location-input" placeholder="Sök efter plats..." />
+        <button id="search-btn">Sök</button>
+    </section>
+
+    <section id="map-section">
+        <div id="map-container">
+            <div id="map" style="width: 100%; height: 400px;"></div>
+        </div>
+    </section>
+
     <footer>
         <div class="bar-footer"></div>
         <section class="footer">

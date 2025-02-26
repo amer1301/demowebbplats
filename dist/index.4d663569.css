@@ -16,6 +16,17 @@ main {
   display: flex;
 }
 
+#map-section {
+  margin-top: 2em;
+}
+
+#search-section {
+  justify-content: center;
+  align-items: center;
+  margin: 2em auto;
+  display: flex;
+}
+
 h1 {
   opacity: .7;
   text-align: center;
