@@ -9,6 +9,24 @@ main {
   margin: 0 auto;
 }
 
+#chart-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 5em auto;
+}
+
+#map-section {
+margin-top: 2em;
+}
+
+#search-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2em auto;
+}
+
 h1 {
   font-family: "Karla", serif;
   font-size: 1.2em;
@@ -96,14 +114,14 @@ nav {
 
 .menu-nav li {
   border-right: 0.5px solid black;
-  padding-right: 2.5em;
+  padding-right: 2em;
   white-space: nowrap;
 }
 
 .menu-nav ul {
   list-style-type: none;
   display: flex;
-  gap: 5em;
+  gap: 3em;
 }
 
 h3 {

@@ -9,6 +9,24 @@ main {
   padding: 1em;
 }
 
+#chart-container {
+  justify-content: center;
+  align-items: center;
+  margin: 5em auto;
+  display: flex;
+}
+
+#map-section {
+  margin-top: 2em;
+}
+
+#search-section {
+  justify-content: center;
+  align-items: center;
+  margin: 2em auto;
+  display: flex;
+}
+
 h1 {
   opacity: .7;
   text-align: center;
@@ -94,11 +112,11 @@ nav {
 .menu-nav li {
   white-space: nowrap;
   border-right: .5px solid #000;
-  padding-right: 2.5em;
+  padding-right: 2em;
 }
 
 .menu-nav ul {
-  gap: 5em;
+  gap: 3em;
   list-style-type: none;
   display: flex;
 }

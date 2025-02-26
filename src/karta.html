@@ -9,7 +9,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Great+Vibes&family=Karla:ital,wght@0,200..800;1,200..800&family=Lato&family=MonteCarlo&display=swap" rel="stylesheet">
     <script src="menu.js" defer></script>
-    <script src="main.js" defer></script>
+    <script src="karta.js" defer></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
       
 </head>
 <body>
@@ -26,13 +29,13 @@
                   </span>
                 </button>
               </nav>
-    <h1>Information om moment 1</h1>
-    <h2>Automatisering & publicering</h2>
+    <h1>Dynamiska webbplatser</h1>
+    <h2>Del 2 - Karta</h2>
     <div class="bar"></div>
 
     <nav class="menu-nav">
         <ul id="nav-menu">
-        <li><a href="index.html"><span class="underline">Startsida</span></a></li>
+        <li><a href="index.html">Startsida</a></li>
         <li><a href="fotografier.html">Fotografier</a></li>
         <li><a href="arbetsprocess.html">Arbetsprocess</a></li>
         <li><a href="moment2.html">Moment 2</a></li>
@@ -40,20 +43,22 @@
         <li><a href="SASS.html">Sass</a></li>
         <li><a href="animeringar.html">Animeringar</a></li>
         <li><a href="diagram.html">Diagram</a></li>
-        <li><a href="karta.html">Karta</a></li>
+        <li><a href="karta.html"><span class="underline">Karta</span></a></li>
     </ul>
         </nav>
 </header>
 <main>
-    <section class="information">
-        <h3>Uppgiftsbeskrivning</h3>
-        <div class="bar-brown"></div>
-        <p>Syftet med denna uppgift är att få en förståelse för hur Node.js kan användas för att förenkla och effektivisera en webbplats.
-            Målet är att lära sig automatisera olika uppgifter med hjälp av kommandobaserade verktyg i Node.js och skapa en automatiserad utvecklingsmiljö med hjälp av Git och Node.js,
-            vilket möjliggör automatisk publicering av uppdateringar både på webbplatsen och i Git-repot.
-            Förutom detta ska vi även läsa oss att transpilera och minifiera CSS, HTML och automatisera JavaScript, samt optimering av grafikfiler utan manuell inblanding som vi gjort i tidigare moment.
-            En annan central del av uppgiften är att bygga en boilerplate för webbutveckling med en förberedd kodbas som innehåller den grundläggande
-            strukturen och nödvändig konfiguration för ett projekt.</p>
+
+    <section id="search-section">
+        <label for="location-input">Skriv in en plats:&nbsp;</label>
+        <input type="text" id="location-input" placeholder="Sök efter plats..." />
+        <button id="search-btn">Sök</button>
+    </section>
+
+    <section id="map-section">
+        <div id="map-container">
+            <div id="map" style="width: 100%; height: 400px;"></div>
+        </div>
     </section>
 
     <footer>
