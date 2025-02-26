@@ -20,6 +20,13 @@ main {
   margin-top: 2em;
 }
 
+#documentation-link p {
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  display: flex;
+}
+
 #search-section {
   justify-content: center;
   align-items: center;
